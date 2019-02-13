@@ -47,10 +47,27 @@
             height: 50px;
             text-align: center;
             line-height: 50px;
+            background: #cccccc;
         }
 
         #list .submenu a{
             text-decoration: none;
+        }
+
+        /*#list .submenu{*/
+            /*cursor: pointer;            /* 选中后为小手 */
+        /*}*/
+
+        #list .submenu >li:hover{
+            background: #00f;
+        }
+
+        .submenu{
+            display: none;
+        }
+
+        #list .item:hover .submenu{
+            display: block;
         }
     </style>
 </head>
@@ -61,10 +78,10 @@
         <li class="item"><a href="">Link Three</a></li>
         <li class="item"><a href="">Link Four</a>
             <ul class="submenu">
-                <li>鞋子</li>
-                <li>衣服</li>
-                <li>裤子</li>
-                <li>帽子</li>
+                <li><a href="">鞋子</a></li>
+                <li><a href="">衣服</a></li>
+                <li><a href="">裤子</a></li>
+                <li><a href="">帽子</a></li>
             </ul>
         </li>
     </ul>
