@@ -38,7 +38,7 @@
             height: 32px;
         }
 
-        #item1 li,#item1 a,#item2 a{
+        #item1 li,#item1 a,#item2 a,#item2 .submenu0 li{
             line-height: 32px;
             text-align: center;
             color: #999999;
@@ -64,6 +64,9 @@
             display: none;
             line-height: 32px;
             text-align: center;
+            position: absolute;
+            top: 32px;
+            left: 0px;
         }
 
         #item2 .menu:hover .submenu0{
@@ -74,15 +77,19 @@
             cursor: pointer;
         }
 
-        #item2 .submenu0 li:hover{
+        #item2 .submenu0 li:hover {
             color: red;
             text-decoration: underline;
+            
         }
+
         #item2 .menu2 a:hover{
             text-decoration: underline;
         }
 
-
+        #item2 .menu2{
+            position: relative;
+        }
     </style>
 </head>
 <body>
@@ -99,9 +106,8 @@
         <li class="menu menu1" style="padding-left: 10px;padding-right: 14px"><a href="">商家支持</a></li>
         <li class="menu menu1" style="padding-left: 10px;padding-right: 10px"><a href="">淘宝网</a></li>
         <li class="menu menu1" style="padding-left: 10px;padding-right: 10px"><a href="">手机版</a>
-            <img class="submenu0" src="Pictures/qie.png" alt="未找到图片">
         </li>
-        <li class="menu menu1 menu2" style="padding-left: 10px;padding-right: 10px"><a href="">收藏夹</a>
+        <li class="menu menu1 menu2" style="padding-left: 14px;padding-right: 14px"><a href="">收藏夹</a>
             <ul class="submenu0">
                 <li>收藏的宝贝</li>
                 <li>收藏的店铺</li>
